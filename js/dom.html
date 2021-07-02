@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viweport" content="width=device-width, initial-scale=1.0">
+    <title>DOM操作の基本</title>
+</head>
+<body>
+    <button id="textChange">テキスト変更</button>
+    <h1>楽しいJavaScript</h1>
+    <p id="target">こんにちわ。こんにちわ。こんにちわ。</p>
+    <p>こんにちわ。こんにちわ。こんにちわ。</p>
+    <p>こんにちわ。こんにちわ。こんにちわ。</p>
+    <script>
+        `use strict`
+        // const textChange = () => {
+        //     document.querySelector(`h1`).textContent = "Changed!!";
+        //     // document.querySelector(`#target`).textContent = "Changed!!";
+        //     document.getElementById(`target`).textContent = "Changed!!";
+        //     document.querySelector(`p`).textContent = "Changed!!";
+        // }
+        // setTimeout(textChange,1000);
+
+        document.getElementById(`textChange`).addEventListener(`click`,() => {
+            document.getElementById(`target`).textContent = "Changed!!";
+        })
+
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
